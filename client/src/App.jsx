@@ -7,12 +7,14 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import './App.css'
 import ButtonUsage from './components/button';
+import PrimarySearchAppBar from './components/AppBar';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <PrimarySearchAppBar/>
       <ButtonUsage/>
     </>
   )
