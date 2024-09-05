@@ -10,8 +10,8 @@ export default function ButtonUsage() {
         variant="contained"
         className='spin'
         onClick={() => {
-            if (count >= 10) setCount((count) => count = -1)
             setCount((count) => count + 1)
+            if (count >= 10) setCount((count) => count = 0)
         }}
         >
             count is {count}

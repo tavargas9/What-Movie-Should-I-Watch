@@ -166,7 +166,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ minHeight: 100, display: 'flex', justifyContent: 'center' }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -180,11 +180,10 @@ export default function PrimarySearchAppBar() {
           </IconButton>
           <Typography
             variant="h6"
-            noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block' }}}
           >
-            MUI
+            WMSIW?
           </Typography>
           <Search>
             <SearchIconWrapper>
