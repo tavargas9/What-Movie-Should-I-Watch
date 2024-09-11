@@ -16,6 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
+import ThemeSelector from './ThemeSelector';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -221,6 +222,7 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton>
+            <ThemeSelector/>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
